@@ -233,6 +233,7 @@
 }
 
 .intro__content h2 {
+    margin-top: 120px;
     font-size: 4rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
@@ -251,11 +252,14 @@
 }
 
 .info__container {
-    color: #141414;
+    background-color: #141414;
+    justify-content: center;
+    justify-self: center;
 }
 
-.info__content h1 {
-    font-size: 6rem;
+.info__content_1 h1 {
+    width: 50%;
+    font-size: 3rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -265,11 +269,46 @@
     -moz-text-fill-color: transparent;
 }
 
-.info__content p {
+.info__content_1 p {
+    width: 50%;
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 700;
-    color: #000000;
+    color: #ffffff;
+}
+
+.info__content_2 {
+    margin-top: 80px;
+}
+
+.info__content_2 h1 {
+    justify-self: center;
+    width: 100%;
+    font-size: 2rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #0856ff 0%, #347ae2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.info__content_2 p {
+    width: 50%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.info__content_2 .bar {
+    display: block;
+    width: 300px;
+    height: 3px;
+    margin-left: 2%;
+    transition: all 0.3s ease-in-out;
+    background: #5587f5;
 }
 
 /* Mobile Responsive */

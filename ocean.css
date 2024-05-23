@@ -5,6 +5,10 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+body {
+    margin: auto;
+}
+
 /* Navgation Bar menu */
 .navbar {
     background: #131313;
@@ -217,7 +221,7 @@
     max-width: 1300px;
     padding: 0 50px;
     background-position: center;
-    background-image: url('/images/services_card1.webp');
+    background-image: url('/images/services_card1.jpg');
     background-repeat: no-repeat;
 }
 
@@ -251,14 +255,26 @@
     color: #dddddd;
 }
 
-.info__container {
+.info {
+    margin: auto;
     background-color: #141414;
     justify-content: center;
-    justify-self: center;
+}
+
+.info__container {
+    margin: auto;
+    background-color: #141414;
+    justify-content: center;
+    width: 1300px;
+}
+
+.info__content_1 {
+    max-width: 1300px;
 }
 
 .info__content_1 h1 {
-    width: 50%;
+    width: 100%;
+    max-width: 1300px;
     font-size: 3rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -270,9 +286,10 @@
 }
 
 .info__content_1 p {
-    width: 50%;
+    width: 90%;
+    max-width: 1300px;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #ffffff;
 }
@@ -282,6 +299,7 @@
 }
 
 .info__content_2 h1 {
+    padding: 0;
     justify-self: center;
     width: 100%;
     font-size: 2rem;
@@ -295,20 +313,13 @@
 }
 
 .info__content_2 p {
-    width: 50%;
+    justify-self: center;
+    width: 100%;
+    max-width: 1300px;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #ffffff;
-}
-
-.info__content_2 .bar {
-    display: block;
-    width: 300px;
-    height: 3px;
-    margin-left: 2%;
-    transition: all 0.3s ease-in-out;
-    background: #5587f5;
 }
 
 /* Mobile Responsive */

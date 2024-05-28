@@ -222,6 +222,7 @@ body {
     padding: 0 50px;
     background-position: center;
     background-image: url('/images/services_card1.jpg');
+    z-index: 1;
     background-repeat: no-repeat;
 }
 
@@ -255,9 +256,19 @@ body {
     color: #dddddd;
 }
 
+.breaker {
+    background-color: #131313;
+    width: 100%;
+    height: 80px;
+}
+
 .info {
+    top: 10px;
     margin: auto;
-    background-color: #141414;
+    background-image: url("/images/background.jpg");
+    width: 100vw;
+    height: 100vw;
+    background-attachment: fixed;
     justify-content: center;
 }
 
@@ -272,7 +283,7 @@ body {
     margin-top: 50px;
     padding: 10px;
     max-width: 1300px;
-    background-color: #2e2e2e;
+    background-color: rgba(51, 51, 51, 0.97);
     border-radius: 10px;
 }
 
@@ -280,29 +291,26 @@ body {
     width: 90vw;
     max-width: 1300px;
     font-size: 3rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+    color: #bbbbbb;
+    font-weight: bold;
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .info__content_1 p {
-    width: 80vw;
+    width: 90vw;
     max-width: 1300px;
     margin-top: 1rem;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #bbbbbb;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .info__content_2 {
     padding: 10px;
     max-width: 1300px;
-    background-color: #2e2e2e;
+    background-color: rgba(51, 51, 51, 0.97);
     margin-top: 50px;
     border-radius: 10px;
 }
@@ -311,22 +319,19 @@ body {
     width: 90vw;
     max-width: 1300px;
     font-size: 3rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+    color: #bbbbbb;
+    font-weight: bold;
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .info__content_2 p {
-    width: 80vw;
+    width: 90vw;
     max-width: 1300px;
     margin-top: 1rem;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #bbbbbb;
     font-family: Arial, Helvetica, sans-serif;
 }
 

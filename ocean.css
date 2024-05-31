@@ -256,145 +256,103 @@ body {
     color: #dddddd;
 }
 
-.info {
-    top: 10px;
-    margin: auto;
-    background-color: #141414;
-    width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    justify-content: center;
-}
-
-.info__container {
+/* Services section */
+.services {
+    background: #141414;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    height: 100vh;
+    grid-template-columns: auto;
 }
 
-.info__content_1 {
-    margin-top: 50px;
-    padding: 10px;
-    max-width: 1300px;
-    background-image: url("/images/ocean_background1.jpg");
+.services h1 {
+    margin-top: 40px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, 
+    #ff8177 0%, 
+    #ff867a 0%, 
+    #ff8c7f 21%, 
+    #f99185 52%, 
+    #cf556c 78%,
+    #b12a5b 100%);
     background-size: 100%;
-    border-radius: 10px;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+}
+
+.services__card {
+    font-size: 1.5rem;
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
     transform: scale(1);
     transition: 0.2s ease-in;
 }
 
-.info__content_1:hover {
-    transform: scale(1.03);
+#service__1 {
+    /* CHANGE THESE PHOTOS TO MATCH THE TEXT */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), 
+    url('/images/ocean_background1.jpg');
+    background-position: center;
+}
+
+#service__2 {
+    /* CHANGE THESE PHOTOS TO MATCH THE TEXT */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), 
+    url('/images/services_card2.jpg');
+    background-position: center;
+}
+
+.services__card a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.services h2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.services__card p {
+    position: absolute;
+    margin-top: 50%;
+    left: 30px;
+}
+
+.services__card:hover {
+    transform: scale(1.01);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
-.info__content_1 h1 {
-    width: 90vw;
-    max-width: 1300px;
-    font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
-    font-weight: bold;
-    background-size: 100%;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
-}
-
-.info__content_1 p {
-    width: 90vw;
-    max-width: 1300px;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
-    font-family: 'Trebuchet MS', sans-serif;
-}
-
-.info__content_2 {
-    margin-top: 50px;
-    padding: 10px;
-    max-width: 1300px;
-    background-image: url("/images/ocean_background1.jpg");
-    background-size: 100%;
-    border-radius: 10px;
-    transform: scale(1);
-    transition: 0.2s ease-in;
-}
-
-.info__content_2:hover {
-    transform: scale(1.03);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-
-.info__content_2 h1 {
-    width: 90vw;
-    max-width: 1300px;
-    font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
-    font-weight: bold;
-    background-size: 100%;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
-}
-
-.info__content_2 p {
-    width: 90vw;
-    max-width: 1300px;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
-    font-family: 'Trebuchet MS', sans-serif;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
-
-    .intro__content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .intro__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .main__container h2 {
-        font-size: 3rem;
-    }
-
-    .intro__content p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
+@media screen and (max-width: 960px){
+    .services h1 {
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .intro__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
+    .services h1 {
+        font-size: 1.2rem;
     }
 
-    .main__container h2 {
-        font-size: 2rem;
+    .services__card {
+        width: 300px;
     }
-
-    .intro__content p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
+    
 }

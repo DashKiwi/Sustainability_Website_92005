@@ -222,7 +222,7 @@ body {
     padding: 0 50px;
     background-position: center;
     background-image: linear-gradient(to top, #141414 5%, rgba(0, 0, 0, 0))
-    , url('/images/services_card1.jpg');
+    , url('/images/cards_card1.jpg');
     background-repeat: no-repeat;
 }
 

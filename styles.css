@@ -415,16 +415,16 @@
     right: 0;
 }
 
-/* Services section */
-.services {
+/* Card section */
+.cards {
     background: #141414;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
-.services h1 {
+.cards h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to right, 
     #ff8177 0%, 
@@ -442,12 +442,12 @@
     -moz-text-fill-color: transparent;
 }
 
-.services__container {
+.cards__container {
     display: flex;
     justify-content: center;
 }
 
-.services__card {
+.cards__card {
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -461,51 +461,59 @@
 
 #ocean {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), 
-    url('/images/services_card1.jpg');
+    url('/images/cards_card1.jpg');
     background-position: center;
 }
 
 #river {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), 
-    url('/images/services_card2.jpg');
+    url('/images/cards_card2.jpg');
     background-position: center;
 }
 
-.services__card a {
+.cards__card a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.services h2 {
+.cards h2 {
     position: absolute;
     top: 350px;
     left: 30px;
 }
 
-.services__card p {
+.cards__card p {
     position: absolute;
     top: 400px;
     left: 30px;
 }
 
-.services__card:hover {
+.cards__card h3 {
+    color: #b1b1b1;
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.cards__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
 @media screen and (max-width: 960px){
-    .services h1 {
+    .cards h1 {
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .services h1 {
+    .cards h1 {
         font-size: 1.2rem;
     }
 
-    .services__card {
+    .cards__card {
         width: 300px;
     }
     

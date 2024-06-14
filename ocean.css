@@ -280,7 +280,12 @@ body {
     justify-self: center;
     margin: 0 auto;
     width: 1200px;
-    height: 400px;
+    height: 800px;
+    padding-top: 30px;
+}
+
+.info__container img {
+    max-width: 90%;
 }
 
 .info__area h2 {

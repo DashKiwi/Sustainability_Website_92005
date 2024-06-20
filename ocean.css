@@ -267,6 +267,7 @@ body {
 
 .info__container img {
     max-width: 90%;
+    border-radius: 5px;
 }
 
 .breaker {
@@ -287,7 +288,7 @@ body {
 }
 
 .info__area p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: #ffffff;
     background-image: color(#ffffff);
     background-size: 100%;
@@ -298,7 +299,7 @@ body {
 }
 
 #info__2 {
-    padding-top: 200px;
+    margin-top: 200px;
 }
 
 #info__2 h2 {
@@ -307,12 +308,22 @@ body {
 }
 
 #info__3 {
-    padding-top: 200px;
+    margin-top: 200px;
 }
 
 #info__3 h2 {
     background-color: #27ce4e;
     background-image: #27ce4e;
+}
+
+@media screen and (max-width: 1200px) {
+    .info__area p {
+        font-size: 1rem;
+    }
+
+    .info__area h2 {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -322,6 +333,14 @@ body {
 
     .info__area h2 {
         font-size: 3rem;
+    }
+
+    #info__2 {
+        margin-top: 100px;
+    }
+
+    #info__3 {
+        margin-top: 100px;
     }
 }
 
@@ -338,4 +357,11 @@ body {
         font-size: 2.5rem;
     }
 
+    #info__2 {
+        padding-top: 50px;
+    }
+
+    #info__3 {
+        padding-top: 50px;
+    }
 }

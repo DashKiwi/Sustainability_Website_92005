@@ -277,6 +277,7 @@ body {
 }
 
 .info__area h2 {
+    padding-bottom: 20px;
     font-size: 4rem;
     background-color: #23bee0;
     background-image: color(#23bee0);
@@ -332,7 +333,7 @@ body {
     }
 
     .info__area h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #info__2 {
@@ -354,7 +355,7 @@ body {
     }
 
     .info__area h2 {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 
     #info__2 {

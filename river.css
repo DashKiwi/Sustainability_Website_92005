@@ -220,17 +220,18 @@ body {
     width: 100%;
     max-width: 100%;
     padding: 0 50px;
+    background-size: 100%;
     background-position: center;
     background-image: linear-gradient(to top, #141414 5%, rgba(0, 0, 0, 0))
-    , url('/images/cards_card1.jpg');
+    , url('/images/cards_card2.jpg');
     background-repeat: no-repeat;
 }
 
 .intro__content h1 {
     font-size: 6rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -246,7 +247,7 @@ body {
     text-align: center;
     font-size: 4rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
